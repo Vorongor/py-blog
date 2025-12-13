@@ -6,7 +6,7 @@
   <a class="page-item" href="{% url "blog:post-create" %}">Create new post</a>
   <ul>
     {% for post in post_list %}
-      <li><strong>{{ post.owner.username }}: </strong> <a
+      <li><strong>{{ pot.author.username }}: </strong> <a
           href="{% url "blog:post-detail" pk=post.id %}">{{ post.title }}</a>
         <br>
         <p>{{ post.content|truncatewords:30 }}</p>

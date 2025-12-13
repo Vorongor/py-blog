@@ -9,9 +9,9 @@ from blog.views import (
 
 urlpatterns = [
     path("", PostListView.as_view(), name="index"),
-    path("post/<int:pk>/", PostDetailView.as_view(), name="post-detail"),
-    path("post/create/", PostCreateView.as_view(), name="post-create"),
-    path("post/<int:pk>/update/", PostUpdateView.as_view(),
+    path("posts/<int:pk>/", PostDetailView.as_view(), name="post-detail"),
+    path("posts/create/", PostCreateView.as_view(), name="post-create"),
+    path("posts/<int:pk>/update/", PostUpdateView.as_view(),
          name="post-update"),
 ]
 

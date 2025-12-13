@@ -7,10 +7,10 @@ class CommentForm(forms.ModelForm):
         model = Commentary
         fields = ["content"]
         labels = {
-            "content": "Add your comment",
+            "text": "Add your comment",
         }
         widgets = {
-            "content": forms.Textarea(
-                attrs={"rows": 1, "placehol-der": "Write a comment..."}
+            "text": forms.Textarea(
+                attrs={"rows": 1, "placeholder": "Write a comment..."}
             ),
         }

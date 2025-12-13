@@ -1,10 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import DetailView, CreateView, ListView, UpdateView
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from blog.form import CommentForm
-from blog.models import Post, Commentary
+from blog.models import Post
 
 
 class PostListView(ListView):
